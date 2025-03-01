@@ -1,0 +1,29 @@
+write_medical_benefits:
+  description: >
+    Generate a short 3 benefits for this '{query}' as a career and select only one according to your knowledge and experience
+  expected_output: >
+    provide short 3 benefits about choosing a medical field as a career.
+  agent: medical_assistant
+
+write_engineering_benefits:
+  description: >
+    Generate a short 3 benefits for this '{query}' as a career and select only one according to your knowledge and experience
+  expected_output: >
+    provide short 3 benefits about choosing a engineering field as a career.
+  agent: engineering_assistant
+
+write_business_benefits:
+  description: >
+    Generate a short 3 benefits for this '{query}' as a career and select only one according to your knowledge and experience  
+  expected_output: >
+    provide short 3 benefits about choosing a business field as a career.
+  agent: business_assistant
+
+select_best_career:
+  description: >
+    select the best career based on the benefits provided by the other assistants and prefer the one which is more trending and more in demand
+  expected_output: >
+    select only one career without defining the field from '{query}'
+  agent: decision_maker_assistant
+
+

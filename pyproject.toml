@@ -1,0 +1,21 @@
+[project]
+name = "career_selection_system"
+version = "0.1.0"
+description = "career_selection_system using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.100.1,<1.0.0",
+]
+
+[project.scripts]
+kickoff = "career_selection_system.main:kickoff"
+plot = "career_selection_system.main:plot"
+css = "career_selection_system.main1:kickoff"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "flow"
